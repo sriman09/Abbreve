@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
-  const deafultTheme = localStorage.getItem("isDarkMode") || false;
+  const deafultTheme = JSON.parse(localStorage.getItem("isDarkMode")) || false;
   const [isDarkMode, setIsDarkMode] = useState(deafultTheme);
   const element = document.documentElement;
 
